@@ -1,47 +1,36 @@
-<h1>OptimizedHTML - Start HTML Template</h1>
+<h1>Start HTML Template</h1>
 
 <p>
-	<!-- <img src="https://raw.githubusercontent.com/agragregra/optimizedhtml-start-template/master/app/img/preview.jpg" alt="Start HTML Template"> -->
+	<img src="http://4.bp.blogspot.com/-cbJwMFZQkP0/VlLva-AtPFI/AAAAAAAAA0M/ShnxDDLujqE/s1600/hd-wallpapers-desktop%2B%252812%2529.jpg">
 </p>
 
-<p>Author: <a href="http://portfolio.pool-school.kiev.ua/" target="_blank">Евгений Шитый</a>
+<p>Автор: <a href="http://portfolio.pool-school.kiev.ua/" target="_blank">Евгений Шитый</a>
 
-<p>OptimizedHTML is all-inclusive, optimized for Google PageSpeed start HTML5 template with Bootstrap (grid only), Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Imagemin, Vinyl-FTP, Bower (libs path) and Bourbon support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
+<p>Оптимизированным HTML5 шаблон для Google PageSpeed ​​с использованием Bootstrap (сетка), Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Vinyl-FTP, Bower и поддержки Bourbon. Шаблон содержит файл <strong>.htaccess</strong> с правилами кэширования для веб-сервера.</p>
 
-<p>OptimizedHTML Start Template uses the best practices of web development and optimized for Google PageSpeed.</p>
+<p>Кроссбраузерная совместимость: IE9 +.</p>
 
-<p>Cross-browser compatibility: IE9+.</p>
+<p>Шаблон использует <strong>Sass</strong> и структуру проекта с исходным кодом в каталоге <strong>app/</strong> / и конечной папке <strong>dist/</strong> /, который содержит готовый проект с оптимизированным HTML, CSS и JS</p>
 
-<p>The template uses a Sass with <strong>Sass</strong> syntax and project structure with source code in the directory <strong>app/</strong> and production folder <strong>dist/</strong>, that contains ready project with optimized HTML, CSS, JS and images.</p>
-
-<h2>How to use OptimizedHTML</h2>
+<h2>Как использовать HTML шаблон</h2>
 
 <ol>
-	<li><a href="https://github.com/Jenya476/start_template.git">Download</a> <strong>start-template</strong> from GitHub;</li>
-	<li>Install Node Modules: <strong>npm i</strong>;</li>
-	<li>Run the template: <strong>gulp</strong>.</li>
+	<li><a href="https://github.com/Jenya476/start_template.git">Скачать</a> <strong>start-template</strong> с GitHub;</li>
+	<li>Установить Node Modules: <strong>npm i</strong>;</li>
+	<li>Запустить шаблон: <strong>gulp</strong>.</li>
 </ol>
 
 <h2>Gulp tasks:</h2>
 
 <ul>
-	<li><strong>gulp</strong>: run default gulp task (sass, js, watch, browserSync) for web development;</li>
-	<li><strong>build</strong>: build project to <strong>dist</strong> folder (cleanup, image optimize, removing unnecessary files);</li>
-	<li><strong>deploy</strong>: project deployment on the server from <strong>dist</strong> folder via FTP;</li>
-	<li><strong>clearcache</strong>: clear all gulp cache.</li>
+	<li><strong>gulp</strong>: запуск дефолтного gulp таска (sass, js, watch, browserSync) для разработки;</li>
+	<li><strong>build</strong>: сборка проекта в папку <strong>dist</strong> (очистка, удаление всего лишнего);</li>
+	<li><strong>deploy</strong>: выгрузка проекта на рабочий сервер из папки <strong>dist</strong> по FTP;</li>
+	<li><strong>clearcache</strong>: очистка кеша gulp. Полезно для очистки кеш картинок и закешированных путей.</li>
 </ul>
 
-<h2>Rules for working with the starting HTML template</h2>
+<h2>Правила работы со стартовым HTMl шаблоном</h2>
 
 <ol>
-	<li>All HTML files should have similar initial content as in <strong>app/index.html</strong>;</li>
-	<li><strong>Template Basic Images Start</strong> comment in app/index.html - all your custom template basic images (og:image for social networking, favicons for a variety of devices);</li>
-	<li><strong>Custom Browsers Color Start</strong> comment in app/index.html: set the color of the browser head on a variety of devices;</li>
-	<li><strong>Custom HTML</strong> comment in app/index.html - all your custom HTML;</li>
-	<li>For installing new jQuery library, just run the command "<strong>bower i plugin-name</strong>" in the terminal. Libraries are automatically placed in the folder <strong>app/libs</strong>. Bower must be installed in the system (npm i -g bower). Then place all jQuery libraries paths in the <strong>'libs'</strong> task (gulpfile.js);</li>
-	<li>All custom JS located in <strong>app/js/common.js</strong>;</li>
-	<li>All Sass vars placed in <strong>app/sass/_vars.sass</strong>;</li>
-	<li>All Bootstrap media queries placed in <strong>app/sass/_media.sass</strong>;</li>
-	<li>All jQuery libraries CSS styles placed in <strong>app/sass/_libs.sass</strong>;</li>
-	<li>Rename <strong>ht.access</strong> to <strong>.htaccess</strong> before place it in your web server. This file contain rules for files caching on web server.</li>
+	<li>Для установки новой jQuery библиотеки просто выполните в терминале команду  "<strong>bower i plugin-name</strong>". Библиотека автоматически будет размещена в папке <strong>app/libs</strong>. Bower должен быть установлен в вашей системе. Для установки Bower просто выполните команду npm i -g bower в трминале. После этого укажите все ссылки на скрипты jQuery библиотек в таске <strong>'libs'</strong> (gulpfile.js);</li>
 </ol>
