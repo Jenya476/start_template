@@ -34,3 +34,5 @@
 <ol>
 	<li>Для установки новой jQuery библиотеки просто выполните в терминале команду  "<strong>bower i plugin-name</strong>". Библиотека автоматически будет размещена в папке <strong>app/libs</strong>. Bower должен быть установлен в вашей системе. Для установки Bower просто выполните команду npm i -g bower в трминале. После этого укажите все ссылки на скрипты jQuery библиотек в таске <strong>'libs'</strong> (gulpfile.js);</li>
 </ol>
+
+<p>Шаблон основан на <a href="http://webdesign-master.ru/blog/tools/2016-08-19-optimizedhtml.html" target="_blank">стартовом шаблоне webdesign-master.ru</a>
