@@ -4,27 +4,328 @@
 @import "vars"
 @import "base"
 
+// -------------------- main --------------------
+html, body
+  font-size: 14px
+  font-family: 'Open Sans', sans-serif
+.wrap
+  width: 100%
+  max-width: 1040px
+  padding: 0 24px
+  margin: 0 auto
+section
+  padding: 80px 0 64px
+section.btn-block
+  padding: 64px 0
+  background-color: #F4F6F6
+  text-align: center
+.section-name
+  font-size: 60px
+  margin-bottom: 24px
+  text-align: center
+.section-desc
+  font-size: 20px
+  text-align: center
+.button
+  text-align: center
+  text-transform: uppercase
+  color: #ffffff
+  background-color: $accent
+  border-radius: 45px
+  font-size: 24px
+  width: 300px
+  height: 70px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+  box-shadow: 0 2px 50px rgba($accent, .5), 0 2px 50px rgba(#000000, .56)
+
+// -------------------- header --------------------
+.header
+  box-shadow: 0 2px 20px rgba(#4363CB, 1)
+  .header-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 40px 0
+    .header-logo
+      width: 148px
+      height: 24px
+      margin-right: 188px
+      background-image: url(../img/Des.svg)
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+    .mnu-btn
+      display: none
+    .header-menu
+      flex: 1 1 auto
+      display: flex
+      justify-content: space-between
+      .menu-item
+        .menu-item-link
+          text-transform: uppercase
+
+// -------------------- about --------------------
+.about-section
+  background-image: url(../img/Mask.png)
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  padding: 96px 0 160px
+  .about-wrap
+    color: #ffffff
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .about-logo
+      width: 324px
+      height: 49px
+      background-image: url(../img/logo_white.svg)
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+    .about-name
+    .about-desc
+      margin-bottom: 88px
+    .about-btn
+
+// -------------------- what-we-do --------------------
+.what-we-do-section
+  .section-body
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .body-item
+      flex: 1 1 280px
+      text-align: center
+      .img-wrap
+        width: 142px
+        height: 142px
+        border-radius: 28px
+        box-shadow: 4px 6px 9px rgba(#5a5a5a, .05), 4px 6px 13px rgba(#2BABE9, .25)
+        filter: blur(25.82%)
+        transform: rotate(45deg)
+        margin: 56px auto
+        display: flex
+        justify-content: center
+        align-items: center
+        svg
+          transform: rotate(-45deg)
+          margin: auto
+          //background-color: #bb22cc
+      &-name
+        font-size: 30px
+      &-desc
+
+// -------------------- who-we-are --------------------
+.who-we-are-section
+  .section-body
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .body-item
+      flex: 1 1 280px
+      text-align: center
+      .img-wrap
+        width: 200px
+        height: 200px
+        border-radius: 30px
+        transform: rotate(45deg)
+        margin: 48px auto
+        .face-wrap
+          transform: rotate(-45deg)
+          width: 100%
+          height: 100%
+          background-position: center
+          background-repeat: no-repeat
+          background-size: cover
+        .face-wrap#face1
+          background-image: url(../img/face1.png)
+        .face-wrap#face2
+          background-image: url(../img/face2.png)
+        .face-wrap#face3
+          background-image: url(../img/face3.png)
+      &-name
+        font-size: 30px
+      &-desc
+
+// -------------------- our-experts --------------------
+.our-experts-section
+  .section-body
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .body-item
+      flex: 1 1 280px
+      padding: 0 14px
+      text-align: center
+      margin-bottom: 24px
+      .img-wrap
+        width: 140px
+        height: 140px
+        border-radius: 30px
+        transform: rotate(45deg)
+        margin: 48px auto
+        .face-wrap
+          transform: rotate(-45deg)
+          width: 100%
+          height: 100%
+          background-position: center
+          background-repeat: no-repeat
+          background-size: cover
+        .face-wrap#face4
+          background-image: url(../img/face1.png)
+        .face-wrap#face5
+          background-image: url(../img/face2.png)
+        .face-wrap#face6
+          background-image: url(../img/face3.png)
+        .face-wrap#face7
+          background-image: url(../img/face1.png)
+        .face-wrap#face8
+          background-image: url(../img/face2.png)
+        .face-wrap#face9
+          background-image: url(../img/face3.png)
+      &-name
+        font-size: 30px
+      &-desc
+
 // -------------------- Block_name --------------------
+.our-partners-section
+  .section-desc
+    margin-bottom: 104px
+  .section-body
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: 40px
+    .partners-item
+      height: 104px
+      flex: 1 1 220px
+      display: flex
+      img
+        width: auto
+        height: 100%
+        margin: auto
 
+// -------------------- contacts --------------------
+.contacts-section
+  .section-desc
+    margin-bottom: 72px
+  .section-body
+    display: flex
+    flex-wrap: wrap
+    .section-body-l
+      flex: 1 1 300px
+      border-right: 2px solid #d8d8d8
+      .contact-item
+        margin: 0 auto 32px
+        display: flex
+        align-items: center
+        svg
+          width: 48px
+          text-align: center
+          margin-right: 32px
+        .contacts-item-text
+    .section-body-r
+      flex: 1 1 300px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      input
+        margin-bottom: 48px
+        padding: 24px
+        border: none
+        border-bottom: 2px solid #000000
+        width: 380px
+        text-align: center
+        &:focus
+          outline: none
+      .section-btn
+        background-color: #ffffff
+        color: #000000
+        width: 240px
+        height: 56px
+        box-shadow: none
+        box-shadow: 0 2px 23px rgba(#5a5a5a, .25),  0 2px 26px rgba(#2BABE9, .45)
 
-// -------------------- Block_name --------------------
-
-
-// -------------------- Block_name --------------------
-
-
-// -------------------- Block_name --------------------
-
-
-// -------------------- Block_name --------------------
-
-
-// -------------------- Block_name --------------------
-
-
-// -------------------- Block_name --------------------
-
-
-// -------------------- Block_name --------------------
+// -------------------- footer --------------------
+.footer
+  height: 82px
+  background-color: #000000
+// -------------------- footer --------------------
+.popup
+  width: 592px
+  padding: 32px
+  border-radius: 30px
+  margin: auto
+  background-color: #ffffff
+  *
+    box-sizing: border-box
+  .popup-form
+    width: 100%
+    .popup-name
+      text-align: center
+      font-size: 40px
+      margin-bottom: 24px
+    .popup-body
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 32px
+      .popup-body-l
+        flex: 1 1 200px
+        border-right: 2px solid #d8d8d8
+        .input-wrap
+          display: flex
+          align-items: center
+          margin-bottom: 16px
+          &:last-child
+            margin-bottom: 0
+          .popup-checkbox
+            width: 16px
+            height: 16px
+            margin: 0
+            margin-right: 24px
+            &:focus, &:active
+              box-shadow: none
+              outline: none
+              border: 0
+              box-shadow: 0 0px 5px rgba(#00EAFF, .55)
+          label
+            font-size: 14px
+            cursor: pointer
+      .popup-body-r
+        text-align: right
+        flex: 1 1 200px
+        padding-left: 32px
+        .popup-input
+          width: 100%
+          padding: 8px
+          border: none
+          border-bottom: 2px solid #000000
+          margin-bottom: 24px
+          transition: border-bottom .25s
+          &:focus
+            border-bottom: 2px solid #D8D8D8
+            outline: none
+        .popup-textarea-name
+          text-align: left
+          padding-left: 8px
+        .popup-textarea
+          padding: 16px
+          width: 100%
+          position: relative
+          border: 2px solid #000000
+          resize: none
+          &:focus
+            outline: none
+    .popup-btn
+      width: 240px
+      height: 56px
+      box-shadow: 0 8px 25px rgba($accent, .2), 0 8px 25px rgba(#000000, .2)
 
 @import "media" // Всегда в конце
